@@ -1,0 +1,96 @@
+/* public/css/contact.css */
+.contact-card {
+    border: none;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.contact-details {
+    color:#333;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-card-inner {
+    /* ... other styles ... */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.contact-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item img {
+    margin-bottom: 10px;
+    display: block;
+    transition: filter 0.3s ease; /* Add transition for filter */
+}
+
+.contact-card-inner:hover .contact-item img {
+    filter: invert(28%) sepia(93%) saturate(2138%) hue-rotate(191deg) brightness(95%) contrast(95%); /* Blue filter */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-item i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+}
+
+.form-label {
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    color: #495057;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary, .btn-outline-dark {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-outline-dark:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-outline-info {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-outline-info:hover {
+    background-color: #007bff;
+    color: #fff;
+}
